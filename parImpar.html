@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Par impar</title>
+</head>
+
+<body>
+<script type="text/javascript">
+    let contadorPares = 0;
+
+    while (true) {
+        let input = prompt('Ingresa un número (o escribe "stop" para finalizar):');
+
+        if (input.toLowerCase() === 'stop') {
+            alert(`Número total de números pares ingresados: ${contadorPares}`);
+            break;
+        }
+
+        let num = parseInt(input);
+
+        if (isNaN(num)) {
+            alert('Por favor, ingresa un número válido.');
+        } else {
+            if (num % 2 === 0) {
+                alert('Par');
+                contadorPares++;
+            } else {
+                alert('Impar');
+            }
+        }
+    }
+</script>
+</body>
+</html>

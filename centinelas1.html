@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centinelas - 1</title>
+</head>
+
+<body>
+<script type="text/javascript">
+    // Inicializar producto a uno
+    let producto = 1;
+    let centinela = 100;
+    let num = parseInt(prompt("Ingresa el primer número:"));
+
+    // Mientras el número no sea igual al valor centinela
+    while (num !== centinela) {
+        // Calcular el producto
+        producto *= num;
+        // Pedir al usuario que ingrese el siguiente número
+        num = parseInt(prompt("Ingresa otro número:"));
+    }
+
+    // Mostrar el producto total de todos los números ingresados
+    alert("El producto total es igual a: " + producto);
+
+</script>
+</body>
+</html>

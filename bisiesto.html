@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de Matrícula - Gabriel García</title>
+</head>
+
+<body>
+<script type="text/javascript">
+//Determinar que un año sea bisiesto
+let año = prompt("Ingrese un año a evaluar:");
+
+if ((año % 4 === 0 && año % 100 !== 0) || (año % 400 === 0)) {
+    alert("El año " + año + " es bisiesto.");
+} else {
+    alert("El año " + año + " no es bisiesto.");
+}
+</script>
+</body>
+</html>

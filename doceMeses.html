@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Doce meses</title>
+</head>
+<body>
+<script type="text/javascript">
+  let meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+  let dias = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+let mes = prompt("Introduce el nombre de un mes:");
+let indice = meses.indexOf(mes);
+if (indice !== -1) {
+  alert("El mes de " + mes + " tiene " + dias[indice] + " días.");
+} else {
+  alert("Mes no válido. Por favor, introduce un nombre de mes correcto.");
+}
+</script>
+</body>
+</html>

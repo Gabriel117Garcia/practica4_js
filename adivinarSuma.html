@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivinar suma</title>
+</head>
+
+<body>
+<script type="text/javascript">
+    random1 = Math.random() * 10;
+    random2 = Math.random() * 10;
+    let sum;
+    let guess = prompt("Adivina cual es la suma en la que pienso, humano.");
+    while (!(guess == sum)) {
+        sum = random1 + random2;
+        guess = prompt("No era ese número lástima. Ingresa otro resultado:");
+    }
+    alert("¡Felicidades, ganaste!");
+</script>
+</body>
+</html>
